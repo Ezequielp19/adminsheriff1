@@ -115,14 +115,14 @@
         <h2>Color del Cinturón: {{ belt.buckleColor }}</h2>
         <p>Talla: {{ belt.size }}</p>
         <p>Tipo de Cuero: {{ belt.fabricDesign }}</p>
-        <p>Ancho: {{ belt.width }} cm</p>
+        <p>Ancho: {{ belt.width }} mm</p>
         <div *ngIf="belt.buckleColor || belt.brand || belt.style || belt.model || belt.targetAgeGroup">
           <h3>Detalles de la Hebilla</h3>
           <p>Color de la Hebilla: {{ belt.buckleColor }}</p>
           <p>Marca: {{ belt.brand || 'No especificada' }}</p>
           <p>Estilo: {{ belt.style }}</p>
           <p>Modelo: {{ belt.model || 'No especificado' }}</p>
-          <p>Grupo de Edad: {{ belt.targetAgeGroup }}</p>
+          <p>Grosor: {{ belt.targetAgeGroup }} mm</p>
                    <p>Precio: {{ getCurrencySymbol(belt.currency) }} {{ belt.price }}</p>
 
           <!-- <p>Precio: $ {{ belt.price }}</p> -->
